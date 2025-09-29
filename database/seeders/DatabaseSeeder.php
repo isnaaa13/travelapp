@@ -15,20 +15,19 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         $this->call([
-        CustomerSeeder::class,
-        DestinationSeeder::class,
-        TourPackageSeeder::class,
-        CurrencySeeder::class,
-        BookingSeeder::class,
-        ReviewSeeder::class,
-        ItinerarySeeder::class,
-        GuideSeeder::class,
-        GuideAssignmentSeeder::class,
+            RoleSeeder::class,
+            PermissionSeeder::class,
+            RolePermissionSeeder::class,
+            UserSeeder::class,
+            CustomerSeeder::class,
+            DestinationSeeder::class,
+            TourPackageSeeder::class,
+            CurrencySeeder::class,
+            BookingSeeder::class,
+            ReviewSeeder::class,
+            ItinerarySeeder::class,
+            GuideSeeder::class,
+            GuideAssignmentSeeder::class,
     ]);
-    
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
     }
 }
